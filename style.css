@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blanco: #f5f5f5;
+    --color-gris: #444444;
+    --color-celeste: #03989E;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+#container-general {
+    display: flex;
+    flex-direction: row;
+}
+
+#section-capacitaciones {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.card-capacitacion {
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+}
+
+.font {
+    font-size: 16px;
+    font-family: oswald, sans-serif;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.img-container {
+    overflow: hidden;
+    position: relative;
+} 
+
+.img-container img {
+    width: 60%;
+    height: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.boton {
+    font-size: 15px;
+    font-family: oswald, sans-serif;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 100px;
+    text-align: center;
+    align-self: center;
+    color: var(--color-blanco);
+    background-color: var(--color-gris);
+}
+
+.boton:hover {
+    background-color: #747272;
+    border: solid 0.5px black;
+}
+
+
+.botonFin {
+        font-size: 15px;
+        font-family: oswald, sans-serif;
+        width: 70%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+        text-align: center;
+        align-self: center;
+        color: var(--color-blanco);
+        background-color: var(--color-gris);
+    }
+
+button:hover {
+    background-color: #747272;
+    border: solid 0.5px black;
+}
+
+.info-capacitacion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#section-inscripcion {
+    font-family: oswald, sans-serif;
+    font-size: 14px;
+    width: 300px;
+    height: 30%;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--color-celeste);
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+#section-inscripcion div {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
