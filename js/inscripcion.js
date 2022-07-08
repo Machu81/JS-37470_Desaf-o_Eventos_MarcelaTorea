@@ -2,7 +2,6 @@ let inscripcion = [];
 let sectionCapacitaciones = document.getElementById("section-capacitaciones");
 let sectionInscripcion = document.getElementById("section-inscripcion");
 
-//creacion de la seccion carrito con DOM
 let totalCompra = document.createElement("div");
 totalCompra.innerHTML = "<h2>Total: $</h2>";
 sectionInscripcion.appendChild(totalCompra);
@@ -19,7 +18,7 @@ let cantCapacitaciones = document.createElement("h3");
 cantCapacitaciones.innerText = " 0";
 cantidadCapacitaciones.appendChild(cantCapacitaciones);
 
-let botonFinalizar = document.createElement("button");
+let botonFinalizar = document.createElement("button"); 
 botonFinalizar.innerText = "Finalizar inscripción";
 sectionInscripcion.appendChild(botonFinalizar);
 botonFinalizar.setAttribute("class", "botonFin");
@@ -29,7 +28,6 @@ botonFinalizar.onclick = () => {
     alert("Total a abonar: $" + precioFinal);
     vaciarCarrito();
 };
-
 
 for (const capacitacion of capacitaciones) {
     let container = document.createElement("div");
@@ -46,7 +44,6 @@ for (const capacitacion of capacitaciones) {
     
     document.getElementById(`${capacitacion.id}`).onclick = () => agregarInscripcion(`${capacitacion.id}`);
 };
-
 
 function agregarInscripcion(id) {
     inscripcion.push(capacitaciones.find(p => p.id == id));
